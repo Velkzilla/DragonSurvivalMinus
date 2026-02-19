@@ -151,9 +151,21 @@ public class DSItemTags extends ItemTagsProvider {
         copy(DSBlockTags.WOODEN_DRAGON_DOORS, WOODEN_DRAGON_DOORS);
     }
 
+    /**
+     * [Minus] Tag dragon species food items.
+     * 
+     * Original: Each dragon species had a specific list of edible items.
+     * New: All dragons can eat ANY item tagged as #c:foods.
+     * 
+     * This ensures compatibility with all modded foods without manual configuration.
+     * 
+     * == MERGE NOTES ==
+     * When merging upstream, do NOT restore the original caveDiet/forestDiet/seaDiet logic.
+     * Keep pointing all dragon foods to #c:foods tag.
+     */
     private void tagDragonSpeciesFood(@NotNull final HolderLookup.Provider provider) {
         provider.lookupOrThrow(DragonSpecies.REGISTRY).listElements().forEach(species -> {
-            // All dragons can eat any food - no dietary restrictions
+            // [Minus] All dragons can eat any food - no dietary restrictions
             TagKey<Item> dragonFood = key(LangKey.FOOD.apply(species.getKey().location()));
             tag(dragonFood).addTag(Tags.Items.FOODS);
         });
