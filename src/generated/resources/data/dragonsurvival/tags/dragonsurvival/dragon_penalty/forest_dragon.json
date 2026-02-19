@@ -1,7 +1,5 @@
 {
   "values": [
-    "dragonsurvival:fear_of_darkness",
-    "dragonsurvival:item_blacklist",
-    "dragonsurvival:fear"
+    "dragonsurvival:item_blacklist"
   ]
 }

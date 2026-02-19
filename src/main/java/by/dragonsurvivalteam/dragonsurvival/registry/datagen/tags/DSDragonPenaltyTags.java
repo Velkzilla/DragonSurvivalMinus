@@ -28,24 +28,15 @@ public class DSDragonPenaltyTags extends TagsProvider<DragonPenalty> {
 
     @Override
     protected void addTags(HolderLookup.@NotNull Provider provider) {
+        // All penalties have been removed - only ITEM_BLACKLIST remains (but it's empty)
         tag(CAVE)
-                .add(DragonPenalties.COLD_WEAKNESS)
-                .add(DragonPenalties.WATER_WEAKNESS)
-                .add(DragonPenalties.ITEM_BLACKLIST)
-                .add(DragonPenalties.WATER_POTION_WEAKNESS)
-                .add(DragonPenalties.SNOWBALL_WEAKNESS)
-                .add(DragonPenalties.WATER_SPLASH_POTION_WEAKNESS)
-                .add(DragonPenalties.FEAR);
+                .add(DragonPenalties.ITEM_BLACKLIST);
 
         tag(SEA)
-                .add(DragonPenalties.THIN_SKIN)
-                .add(DragonPenalties.ITEM_BLACKLIST)
-                .add(DragonPenalties.FEAR);
+                .add(DragonPenalties.ITEM_BLACKLIST);
 
         tag(FOREST)
-                .add(DragonPenalties.FEAR_OF_DARKNESS)
-                .add(DragonPenalties.ITEM_BLACKLIST)
-                .add(DragonPenalties.FEAR);
+                .add(DragonPenalties.ITEM_BLACKLIST);
     }
 
     public static TagKey<DragonPenalty> key(final String path) {

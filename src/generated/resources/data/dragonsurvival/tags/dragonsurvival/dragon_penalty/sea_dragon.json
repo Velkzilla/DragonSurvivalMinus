@@ -1,7 +1,5 @@
 {
   "values": [
-    "dragonsurvival:thin_skin",
-    "dragonsurvival:item_blacklist",
-    "dragonsurvival:fear"
+    "dragonsurvival:item_blacklist"
   ]
 }
