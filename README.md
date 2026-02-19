@@ -1,7 +1,7 @@
 # ⚠️ DragonSurvival Minus
 
 > **EN**: To maximize compatibility with other mods, this fork simplifies the original content by removing certain restrictions and penalties.
-> **中文**: 为了最大化兼容其他 Mod，此分支对原版内容做了一些精简，移除了部分限制和惩罚机制。
+> **中文**:为了最大化兼容其他 Mod，此分支对原版内容做了一些精简，默认移除了部分限制和惩罚机制，但是仍然可以被配置文件dragonsurvival-server.toml覆写。应该与龙拓展兼容，测试了翼麒麟种族，没有发现问题。
 
 ---
 
