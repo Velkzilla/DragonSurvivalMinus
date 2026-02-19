@@ -1,7 +1,7 @@
 # ⚠️ DragonSurvival Minus
 
-> **EN**: To maximize compatibility with other mods, this fork removes unnecessary restrictions and penalties.
-> **中文**: 为了最大化兼容其他 Mod，此分支移除了不必要的限制和惩罚机制。
+> **EN**: To maximize compatibility with other mods, this fork simplifies the original content by removing certain restrictions and penalties.
+> **中文**: 为了最大化兼容其他 Mod，此分支对原版内容做了一些精简，移除了部分限制和惩罚机制。
 
 ---
 
